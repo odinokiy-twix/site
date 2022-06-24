@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+body{
+    font-family: "Ubuntu";
+}
+/* хедер */
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 40px;
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    background-color: #F5F5F5 ;
+}
+.header ul{
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 400px;
+}
+.header ul li{
+    display: inline;
+    font-size: 25px;
+}
+.header a {
+    color: #000000;
+    text-decoration: none;
+}
+.header .logo{
+    background-image: url("/img/logo.jpg");
+    background-size: 100px;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 70px;
+    border: 2px solid #000;
+}
+/* футер */
+.footer{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 40px;
+    border-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: #F5F5F5 ;
+}
+.footer .copyright{
+    text-align: center;
+    font-size: 15px;
+}
+.footer .content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/* Прижимает его к низу */
+    html, body {
+    height: 100%;
+}
+    body {
+    display: flex;
+    flex-direction: column;
+}
+    .content {
+    flex: 1 0 auto;
+}
+    .footer {
+    flex-shrink: 0;
+}
